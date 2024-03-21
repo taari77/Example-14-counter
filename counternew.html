@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="display">0</h1>
+
+    <button id="increment" onclick="add()">+</button>
+    <button id="decrement" onclick="sub()">-</button>
+    <button id="reset" onclick="reset()">Reset</button>
+<script>
+    var count=0
+    function add(){
+        var num1=document.getElementById("display")
+        count++;
+       num1.textContent=count
+    }
+    function sub(){
+        var num2=document.getElementById("display")
+        count--
+        num2.textContent=count
+    }
+    function reset(){
+        var num3=document.getElementById("display")
+        count=0
+        num3.textContent=count
+    }
+</script>
+</body>
+</html>
